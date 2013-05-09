@@ -7,6 +7,6 @@ feature 'Creating Links' do
 		fill_in 'URL', :with => 'http://stackoverflow.com'
 		fill_in 'Description', :with => "Great site for troubleshooting"
 		click_button 'Create Link'
-		page.should have_content('Link has been created.')
+		page.should have_content('Link has been created')
 	end
 end

@@ -1,7 +1,6 @@
 LinkBlog::Application.routes.draw do
-  resources :links
   root :to => "links#index"
-
+  resources :links
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
