@@ -1,6 +1,6 @@
 class LinksController < ApplicationController
 	def index
-		# @links = Link.all
+		@links = Link.all
 	end
 	def new
 		@link = Link.new
@@ -12,8 +12,9 @@ class LinksController < ApplicationController
 			flash[:notice] = "Link has been created"
 			redirect_to @link
 		else
+			flash[:alert] = "Link has not been created"
+			render :action => "new"
 		end
-
 	end
 
 	def show

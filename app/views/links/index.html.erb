@@ -1,3 +1,11 @@
-
+<% @links.each do |link| %>
+	<ul>
+		<li><%= link.url %>
+			<ul>
+				<li><%= link.description %></li>
+			</ul>
+		</li>
+	</ul>
+<% end %>
 
 <%= link_to "New Link", new_link_path %>
