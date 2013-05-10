@@ -2,7 +2,7 @@
 	<ul>
 		<li><%= link_to link.url, link.url %>
 			<ul>
-				<li><%= link.description %></li>
+				<li><%= link.description %> - <%= link.created_at.to_formatted_s(:long_ordinal) %></li>
 			</ul>
 		</li>
 	</ul>

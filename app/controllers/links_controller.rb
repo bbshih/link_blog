@@ -1,6 +1,6 @@
 class LinksController < ApplicationController
 	def index
-		@links = Link.all
+		@links = Link.all.reverse
 	end
 	def new
 		@link = Link.new
